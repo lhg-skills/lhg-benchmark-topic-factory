@@ -1,6 +1,6 @@
 # Agent 提示词模板（Phase 2 对标深挖 / Phase 5 文案批次）
 
-## 一、Phase 2：单账号深挖 agent（subagent_type: Explore）
+## 一、Phase 2：单账号深挖 agent（只读子 agent）
 
 把 {账号}、{已知信息}、{平台ID} 替换后使用。一个账号一个 agent，可多账号并行（并发受限则串行）。
 
@@ -8,7 +8,7 @@
 你是内容调研员。任务：尽可能完整地挖出{平台}博主「{账号}」的内容数据。
 已知信息：{粉丝量/定位/代表作等既有线索，没有就写"无"}
 
-环境注意：本机 git clone 和 github raw 经常失败，用 WebSearch + WebFetch
+环境注意：本机 git clone 和 github raw 经常失败，用联网搜索 + 网页抓取
 （api.github.com 可用）。{平台}反爬严格，多靠搜索摘要、转载文章、第三方数据站公开页。
 B站可用免登录 API：api.bilibili.com/x/relation/stat?vmid=UID（粉丝数）、
 api.bilibili.com/x/web-interface/view?bvid=BV号（单条播放/赞/藏）。
@@ -38,7 +38,7 @@ api.bilibili.com/x/web-interface/view?bvid=BV号（单条播放/赞/藏）。
 返回：完整名单、每位一句话风格标签、所有信息源 URL。找不到的明确说"未找到"，不要编造。
 ```
 
-## 二、Phase 5：文案批次 agent（subagent_type: general-purpose）
+## 二、Phase 5：文案批次 agent
 
 每批 25-40 条，一个 agent 一批；100 条约分 3-4 批。先试并行，并发受限则串行。
 
