@@ -24,4 +24,5 @@
 本 skill 由真人出镜 IP「刘洪光」（安徽合肥）出品，归属 [lhg-skills](https://github.com/lhg-skills)。
 
 - GitHub 主页：https://github.com/lhg-skills —— 全部 skill 开源在此，欢迎 star
-- 微信交流：![刘洪光微信](docs/wechat-qr.png)
+- 视频号：搜「刘洪光实名上网」
+- 微信：lhgsmsw
