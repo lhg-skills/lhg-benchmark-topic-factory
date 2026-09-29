@@ -19,4 +19,9 @@
 
 - 1.0.0（2026-09-29）：首版。8 阶段流水线 + 冒烟脚本；补齐自检与反馈机制、平台中立写法、manifest 与发布文件。
 
-作者：刘洪光（keepliu28）· lhg-skills
+## 出品：刘洪光
+
+本 skill 由真人出镜 IP「刘洪光」（安徽合肥）出品，归属 [lhg-skills](https://github.com/lhg-skills)。
+
+- GitHub 主页：https://github.com/lhg-skills —— 全部 skill 开源在此，欢迎 star
+- 微信交流：![刘洪光微信](docs/wechat-qr.png)

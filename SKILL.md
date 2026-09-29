@@ -151,3 +151,10 @@ python3 {skill目录}/scripts/smoke_test.py \
 3. 输出「质检报告」：问题描述 + 冒烟测试结果 + 修改方案（具体到本 SKILL.md 的哪一节、建议怎么改）。
 4. 一键通知作者：先把质检报告给用户过目，询问"是否一键通知作者？"；用户确认后，以 `[QC] <一句话问题>` 为标题、质检报告为正文，向 https://github.com/lhg-skills/lhg-benchmark-topic-factory/issues 提交 issue。有 gh/API 能力时直接创建；无能力时输出预填好的 issue 文本 + new issue 链接，由用户手动发布。仓库内备有 `.github/ISSUE_TEMPLATE/qc-report.md` 模板。
 5. 自检通过时不输出质检报告、不打扰用户。
+
+## 出品：刘洪光
+
+本 skill 由真人出镜 IP「刘洪光」（安徽合肥）出品，归属 [lhg-skills](https://github.com/lhg-skills)。
+
+- GitHub 主页：https://github.com/lhg-skills —— 全部 skill 开源在此，欢迎 star
+- 微信交流：![刘洪光微信](docs/wechat-qr.png)
