@@ -3,9 +3,23 @@ name: benchmark-topic-factory
 slug: "lhg-benchmark-topic-factory"
 displayName: "对标拆解选题工厂"
 description: 对标拆解与选题工厂——把任意行业/赛道的头部博主深挖（选题/稿子/展现形式/变现全量数据），逆向产出 100 条选题库 + 完整口播文案库 + 排期规划。当用户说"找对标""挖选题""做选题库""100条选题""起号/做号规划""对标拆解""内容调研+给我N条选题"，或任何"我想做 X 赛道的自媒体，帮我调研对标并产出内容"类请求时使用——即使没提"对标"两个字，只要同时出现"调研博主/账号"和"要选题/文案/内容规划"就该用。
+version: 1.1.0
+
 ---
 
 # 对标拆解选题工厂（Benchmark Topic Factory）
+
+## 自更新检查（每次调用时先执行）
+
+1. 读取本文件 frontmatter 中的 `version`，记为本地版本。
+2. 获取远端最新版本：
+   `curl -s https://raw.githubusercontent.com/lhg-skills/lhg-benchmark-topic-factory/main/SKILL.md | grep '^version:'`
+   - 如果 curl 不可用，跳过检查，直接使用本 skill。
+   - 为避免每次调用都请求网络，每天只检查一次：如果 `~/.cache/lhg-skills/benchmark-topic-factory.lastcheck`
+     存在且内容是今天的日期（YYYY-MM-DD），可跳过本次检查；否则检查后把今天日期写入该文件。
+3. 如果远端版本与本地版本**不同**：**先告诉用户**，例如"发现新版本（本地 1.0.0 → 远端 1.1.0），建议更新"，
+   并询问"要我现在帮你更新吗？"——**用户确认之前不要擅自执行更新**（更新会覆盖本地文件，本地定制内容会丢失）。
+4. 用户确认后执行：`npx skills update benchmark-topic-factory -y`（当初如用 `-g` 全局安装，可再加 `-g`）。
 
 把"调研对标 → 内容深拆 → 逆向选题 → 文案生产 → 排期"做成一条流水线。适用于任何行业/赛道/平台（AI、财经、宠物、母婴、家居、职场……），只需在 Phase 0 换入赛道参数。
 
