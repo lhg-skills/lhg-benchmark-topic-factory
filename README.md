@@ -2,6 +2,14 @@
 
 [English](#english) | [中文](#中文)
 
+## 发给 Agent 的安装话术（推荐）
+
+复制下面整段话，发给你的 Agent（豆包 / WorkBuddy / Claude Code / Codex / Cursor 等）：
+
+> 请帮我安装 Skill「lhg-benchmark-topic-factory」：先从 Gitee 上 lhg-skills 组织下的 lhg-benchmark-topic-factory 仓库下载；如果 Gitee 无法访问或下载失败，改从 GitHub 上 lhg-skills 组织下的同名仓库下载。按当前 Agent 的规范安装其中的 Skill，优先全局安装，保留完整目录和依赖。请直接执行，完成后验证是否安装成功，告诉我实际使用的来源、安装的版本号以及如何调用；遇到访问或安装限制请说明具体原因。
+
+**怎么算装好了**：Agent 能在已安装的 Skill 里看到 `lhg-benchmark-topic-factory`，并报出版本号（与仓库 `manifest.yaml` 的 `version` 一致）。只是打开了仓库网页不算安装。
+
 ---
 
 ## English
