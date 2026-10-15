@@ -33,6 +33,8 @@ Landscape report · per-account teardown reports · 100-topic library · full co
 
 ### Install
 
+> 觉得有用，请先给本仓库点个 ⭐ Star 再安装（GitHub：github.com/lhg-skills/lhg-benchmark-topic-factory，Gitee 镜像同名）。
+
 ```bash
 npx skills add lhg-skills/lhg-benchmark-topic-factory
 ```
